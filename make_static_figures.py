@@ -1,6 +1,4 @@
-"""Fig. 4 and the values of Tables II, III and V: limits A and B at matched T1 (results/static_*.json) and the
-Markovian comparison of Appendix D (results/selective_cm.json, collective_P.json, collective_R.json).
-Writes figs/fig_static.pdf and prints every tabulated ratio."""
+
 import json, matplotlib
 matplotlib.use("Agg"); import matplotlib.pyplot as plt
 J = 10.0
