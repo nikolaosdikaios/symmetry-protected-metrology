@@ -27,5 +27,5 @@ for p in [1.0, 0.9, 0.5, 1e-2]:
         full = qfi(lambda x: rho(x, p, t), d)                         # any measurement
         sym  = qfi(lambda x: 0.5 * (rho(x, p, t) + SWAP @ rho(x, p, t) @ SWAP), d)   # best exchange-invariant measurement
         x = np.pi * d * t
-        approx = p * 4 * np.pi**2 * t**2 * x**2 / (x**2 + xstar**2) if p < 1 else 4 * np.pi**2 * t**2
+        approx = 4 * np.pi**2 * t**2 * x**2 * (4 * p**2 / (1 + 3 * p) + p / (x**2 + xstar**2)) if p < 1 else 4 * np.pi**2 * t**2
         print(f"   delta = {d:6.3f} Hz:  QFI(all) = {full:8.4f}   best symmetric = {sym:8.4f}   formula = {approx:8.4f}")

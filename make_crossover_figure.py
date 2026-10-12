@@ -10,7 +10,8 @@ for p, c in [(1.0, "k"), (0.99, "C0"), (0.9, "C1"), (0.5, "C2"), (0.1, "C3")]:
     a.loglog(x / np.pi, exact, c=c, lw=1.2, label=f"$p={p:g}$")
     if p < 1:
         xs2 = (1 - p) / (4 * p)
-        a.loglog(x / np.pi, p * x**2 / (x**2 + xs2), "--", c=c, lw=0.7)
+        xx = x[x < 0.1 * np.pi]                                      # small-x form of Prop. 1, shown for delta*t < 0.1
+        a.loglog(xx / np.pi, xx**2 * (4 * p**2 / (1 + 3 * p) + p / (xx**2 + xs2)), "--", c=c, lw=0.7)
         a.axhline(2 * p**2 / (1 + p), c=c, ls=":", lw=0.7)
 a.set_xlabel(r"$\delta t$"); a.set_ylabel(r"$F_{\rm sym}/4\pi^2t^2$"); a.set_ylim(1e-6, 2)
 a.legend(fontsize=7, frameon=False, loc="lower right")
