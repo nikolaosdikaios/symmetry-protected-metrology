@@ -1,5 +1,4 @@
-"""Sec. VI F and Fig. 8: distribution of multistart optima relative to the best value found, pooled over delta.
-Reads results/static_sel_A.json and results/static_sel_B.json; writes figs/fig_convergence.pdf."""
+
 import json, numpy as np, matplotlib
 matplotlib.use("Agg"); import matplotlib.pyplot as plt
 plt.rcParams.update({"font.size": 9, "font.family": "serif"})
