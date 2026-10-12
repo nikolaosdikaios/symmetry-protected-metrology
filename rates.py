@@ -1,5 +1,4 @@
-"""Table I and Sec. V B: secular decay rates of six noise mechanisms per unit strength, and the coherence bound
-in the fitted homogeneous environment."""
+
 import numpy as np
 import model as M
 mechs = dict(M.MECH, anticorr_z=M.diss(M.Iz[0] - M.Iz[1]), corr_iso=M.diss(M.Fx) + M.diss(M.Fy) + M.diss(M.Fz))
