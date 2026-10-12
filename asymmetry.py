@@ -1,5 +1,4 @@
-"""Sec. V A: asymmetry of the protected sector (Wigner-Yanase skew information for the generator I1z - I2z)
-and the J-limited quantum Fisher information of a singlet probe."""
+
 import numpy as np
 from scipy.linalg import expm, sqrtm
 import model as M
