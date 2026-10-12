@@ -1,6 +1,4 @@
-"""Relaxation model (Sec. V B and Appendix B): secular decay rates of the four mechanisms used in the simulations
-(rows of Table I) and the strengths and
-lifetimes implied by fitting (T1, T2, T_S) for the environments used in the paper."""
+
 import numpy as np
 import model as M
 
