@@ -1,9 +1,4 @@
-"""Sec. VI E and Fig. 6: robustness of the symmetry-breaking gain in limit B.
-(a) uniform miscalibration of every flip angle by a factor 1 + e, protocols not re-optimized;
-(b) RF inhomogeneity: signals averaged over a Gaussian spread of flip-angle factors across the sample;
-(c) dependence on T2*: protected pair and reference re-optimized at T2* = 0.1 and 0.4 s.
-Writes results/robustness.json and figs/fig_robustness.pdf.
-With --plot, only redraws the figure from an existing results/robustness.json."""
+
 import json, numpy as np, matplotlib
 import matplotlib.ticker
 matplotlib.use("Agg"); import matplotlib.pyplot as plt
