@@ -1,5 +1,4 @@
-"""Numerical check of Proposition 1: best exchange-invariant measurement (QFI of the twirled family) versus the
-unrestricted QFI for a singlet probe of purity p (J = 0), and the crossover formula."""
+
 import numpy as np
 from scipy.linalg import expm, sqrtm
 # Two spins, J = 0, generator H = pi*delta*G, singlet probe with purity p: rho0 = p|S><S| + (1-p) I/4
