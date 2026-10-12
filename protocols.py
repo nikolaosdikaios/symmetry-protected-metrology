@@ -1,15 +1,4 @@
-"""
-protocols.py -- control ansaetze and the multistart optimiser.
 
-Collective (symmetric) ansatz, 12 continuous parameters plus two integers:
-    P(th1,ph1) - d1 - [echo]^n1 - P(th2,ph2) - storage - P(th3,ph3) - [echo]^n2 - d2 - P(th4,ph4) - FID
-    echo = tau_e - pi_x - tau_e with a collective pi pulse. n1 = n2 = 0 is the
-    four-pulse ansatz of Table III.
-Selective (symmetry-breaking) ansatz, 15 parameters:
-    Q(a0) - d1 - Q(a1) - storage - Q(a2) - d2 - FID, each Q an independent pulse on each spin.
-Optimisation: L-BFGS-B with finite-difference gradients, several random starts
-(half of them with a long initial storage) plus an optional warm start.
-"""
 import numpy as np
 from scipy.optimize import minimize
 import model as M
