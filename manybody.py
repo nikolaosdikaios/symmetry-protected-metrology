@@ -1,7 +1,4 @@
-"""Sec. VII and Fig. 9: many-body singlet states. (a) quantum Fisher information of N/2 singlet pairs under a linear
-gradient, for adjacent and spanning pairings; (b) Fisher information of two symmetric projective measurements
-(onto the probe, and onto the total-spin-zero sector) for N = 4, with pure and partially mixed probes;
-(c) collective first moments vanish identically. Writes figs/fig_manybody.pdf."""
+
 import numpy as np, matplotlib
 from scipy.linalg import expm
 matplotlib.use("Agg"); import matplotlib.pyplot as plt
