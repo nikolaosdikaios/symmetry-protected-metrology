@@ -1,4 +1,4 @@
-"""Fig. 2: best symmetric Fisher information for a singlet probe of purity p (J = 0), relative to the pure-state QFI (Proposition 1)."""
+
 import numpy as np, matplotlib
 matplotlib.use("Agg"); import matplotlib.pyplot as plt
 plt.rcParams.update({"font.size": 9, "font.family": "serif"})
