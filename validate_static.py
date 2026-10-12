@@ -1,6 +1,4 @@
-"""Appendix C checks of the static-offset pathway method: with Gamma = 0 the pathway sum must reproduce
-direct propagation, and for a plain free-induction decay the static and Markovian descriptions must coincide.
-Also prints the homogeneous lifetimes and the timing of one Fisher evaluation."""
+
 import numpy as np, time, model as M, protocols as Pr, static_runs as SR
 rng = np.random.default_rng(1)
 # (1),(2) Gamma = 0 must reproduce the direct propagation (same 360-sample acquisition)
