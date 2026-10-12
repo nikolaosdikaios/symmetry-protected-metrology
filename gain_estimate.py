@@ -1,7 +1,4 @@
-"""Sec. VI D, the estimate column of Table II and Fig. 5: semi-analytic estimate
-F/F_ref = sin^2(2 theta) (T_c^eff / T2*)^2 of the symmetry-breaking gain,
-compared with the optimized values of limit B. Reads results/static_sel_B.json and results/lifetimes_hom.json;
-writes figs/fig_gain.pdf."""
+
 import json, numpy as np, matplotlib
 matplotlib.use("Agg"); import matplotlib.pyplot as plt
 J, T2s = 10.0, 0.2
