@@ -15,32 +15,6 @@ NumPy 2.4.4, SciPy 1.17.1, Matplotlib 3.10). Put all the .py files in one folder
 Outputs: results/*.json (every optimum, with its control parameters, restart values and settings),
 figs/*.pdf (all figures), and a log of each step on screen.
 
-Why the order matters. The controls are optimized by multistart L-BFGS-B. Each refinement pass
-starts from fresh random controls and from the optima already stored for the other values of
-delta, so the passes below must run in this order, with these seeds (SEED) and numbers of cold
-starts (NCOLD), to reproduce the stored optima exactly. Other library versions or processors can
-change individual optima within the stated convergence (about 2% for the symmetry-breaking
-values, up to about 10% for the symmetric-class values, which are lower bounds).
-
-Where each result comes from
-  main text
-    Fig. 1                          make_level_scheme.py
-    Fig. 2, Proposition 1           make_crossover_figure.py, verify_crossover.py
-    Sec. V A (J-limited F_Q, skew)  asymmetry.py
-    Table I, coherence bound        rates.py
-    fitted strengths (Appendix B)   print_model_tables.py
-    Fig. 3, T_c = 2.54 s            make_lifetimes_figure.py
-    Tables II, III, Fig. 4          static_runs.py (optimization), make_static_figures.py (tables, figure)
-    Table II estimate, Fig. 5       gain_estimate.py
-    Fig. 6 (robustness)             robustness.py
-    Fig. 7 (checks of the theorems) selection_checks.py
-    Fig. 8 (convergence)            convergence.py
-    Fig. 9 (many-body singlets)     manybody.py
-    Table IV (Redfield)             redfield.py
-    Table V (Markovian)             run_sweeps.py (optimization), make_static_figures.py (printout)
-    Appendix C checks               validate_static.py
-  shared modules: model.py (spin model, relaxation, Fisher information), protocols.py (control
-  ansatze and optimizer).
 """
 import argparse
 import json
