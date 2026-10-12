@@ -1,7 +1,5 @@
 """
 run_sweeps.py -- inhomogeneity modeled as Markovian common-mode dephasing (Appendix D comparison).
-The paper uses the tasks selective_cm, collective_P and collective_R. The tasks selective_dd and
-selective_z are exploratory variants and are not used in the paper.
 
 Usage:  python run_sweeps.py <task> [delta_Hz ...]
 tasks:
